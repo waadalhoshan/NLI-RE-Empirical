@@ -12,7 +12,7 @@ To ensure clarity, modularity, and ease of reuse, we provide **three separate re
 
 ---
 
-## 1️⃣ Logit-Based Zero-Shot Inference (Main Contribution)
+## 1️ - Logit-Based Zero-Shot Inference (Main Contribution)
 
 **Repository:** `logit-based-requirements-classification`
 
@@ -30,7 +30,7 @@ This repository implements our **primary contribution**:
 
 ---
 
-## 2️⃣ Embedding-Based Zero-Shot Baseline
+## 2- Embedding-Based Zero-Shot Baseline
 
 **Repository:** `embedding-based-requirements-classification`
 
@@ -48,7 +48,7 @@ This repository corresponds to the **embedding-based baseline** reported in the 
 
 ---
 
-## 3️⃣ ChatGPT Prompting Baseline
+## 3-  ChatGPT Prompting Baseline
 
 **Repository:** `chatgpt-requirements-classification`
 
@@ -91,3 +91,4 @@ If you use any of these artifacts, please cite our paper:
 > Waad Alhoshan, Alessio Ferrari, Liping Zhao
 
 ---
+
