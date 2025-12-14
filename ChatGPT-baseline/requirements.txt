@@ -1,0 +1,9 @@
+openai>=1.30
+pandas>=2.2
+openpyxl>=3.1
+pyyaml>=6.0
+tenacity>=8.2
+tqdm>=4.66
+scikit-learn>=1.5
+rich>=13.7
+requests>=2.32

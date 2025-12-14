@@ -1,0 +1,62 @@
+Examples for Subclasses:
+
+Security:
+-	'Every user of the system shall be authenticated and authorized.'
+-	'The product shall prevent its data from incorrect data being introduced.'
+-	'Only authorized users shall have access to clinical site information.'
+-	'Program Administrators/Nursing Staff Members are the only people who shall have access to clinical site details.'
+
+Performance:
+-	'The system shall refresh the display every 60 seconds.'
+-	'The product shall respond fast to keep up-to-date data in the display.'
+-	'The product shall produce search results in an acceptable time'
+-	'The search results shall be returned no later 30 seconds after the user has entered the search criteria'
+
+Operational:
+-	'The system shall able to operate within a business office environment typical of the Nursing Department at DePaul University.'
+-	'The system shall be used within the specifications defined by the computers used by the Program Administrators/Nursing Staff Members.'
+-	'The system shall operate within the Windows XP Professional operating system.'
+-	'The system shall interface with CampusConnect’s central server'
+
+Scalability:
+-	'The product shall be able to support multiple remote users'
+-	'The product shall be able support 1000 simultaneous users.'
+-	'The product shall be capable of handling the existing 1000 users. This number is expected to grow 5 times within the next year.'
+-	'system shall be able to handle all of the user requests/usage during business hours.'
+
+Usability:
+-	'The system shall be intuitive and self explanatory.'
+-	'The product shall be easy for a realtor to learn.'
+-	'The product shall use symbols and words that are naturally understandable by the realtor community.'
+-	'The product shall be installed by an untrained realtor without recourse to separately-printed instructions.'
+
+Maintainability:
+-	'Washing parameters will be updated during scheduled maintenance hours.'
+-	The product shall be internet browser independent.The product must run using Internet Explorer and Netscape Navigator.'
+-	'Application updates shall occur between 3AM and 6 AM CST on Wednesday morning during the middle of the NFL season.'
+-	'New System version releases shall be released at the beginning of each NFL season.'
+
+
+Availability:
+-	'The application shall have a downtime of at most 10 minutes per year.'
+-	'All movies shall be streamed on demand at any time of the day.'
+-	'The system shall achieve 95% up time.'
+-	'The website shall be available for use 24 hours per day 365 days per year.'
+
+Look and Feel:
+-	'The application shall match the color of the schema set forth by Department of Homeland Security'
+-	'The look and feel of the system shall conform to the user interface standards of the smart device.'
+-	'The user interface shall have standard menus buttons for navigation'
+-	'The system shall have a professional appearance'
+
+Legal:
+-	'The product must comply with Sarbanes-Oxley.'
+-	'The product shall comply with the estimatics laws relating to recycled parts usage.'
+-	'The product shall comply with insurance regulations regarding claims processing.'
+-	'The website will comply with W3C standards.'
+
+Fault Tolerance:
+-	'The product shall operate in offline mode whenever internet connection is unavailable.'
+-	'The product shall allow the user to view previously downloaded search results CMA reports and appointments.'
+-	'The product shall retain user preferences in the event of a failure.'
+-	'100% of saved user preferences shall be restored when system comes back online.'

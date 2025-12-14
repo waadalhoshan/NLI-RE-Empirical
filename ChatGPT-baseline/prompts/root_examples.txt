@@ -1,0 +1,13 @@
+Examples of Root Classes:
+
+Functional:
+-The system shall allow modification of the display.
+-	The system shall offer a display of all the Events in the exercise.
+-	The system shall filter data by Venues and Key Events.
+-	The system shall allow a user to define the time segments.
+
+Non-functional:
+-	90% of untrained realtors shall be able to install the product on their device without printed instructions.
+-	The product is expected to run on Windows CE and Palm operating systems.
+-	Only registered realtors shall be able to access the system.
+-	Every user of the system shall be authenticated and authorized.

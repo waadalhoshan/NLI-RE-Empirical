@@ -1,0 +1,72 @@
+openai:
+  model: gpt-4o-mini
+  temperature: 0
+  max_tokens: 256
+defaults:
+  batch_size: 10
+  parse_regex: ^\s*(\d+)\s*\.\s*Label\s*:\s*(.+?)\s*$
+tasks:
+- name: Functional
+  source_url: https://docs.google.com/spreadsheets/d/1vTEeNuLNC_kDsSqCXSwSEXbQB68Lx7s-/edit?usp=drive_link&ouid=112068552438632279841&rtpof=true&sd=true
+  local_path: data/raw/Functional.xlsx
+  text_col: RequirementText
+  true_col: True Label
+  batch_size: 10
+  system_prompt_file: prompts/functional_system_prompt.txt
+  output_mode: label
+  parse_regex: ^\s*(\d+)\s*\.\s*Label\s*:\s*(.+?)\s*$
+- name: Functional-PROMISE
+  source_url: https://docs.google.com/spreadsheets/d/1_jsvDfFfWyoOMJFmNSHlU0JmGCioq0iT/edit?usp=drive_link&ouid=112068552438632279841&rtpof=true&sd=true
+  local_path: data/raw/Functional-PROMISE.xlsx
+  text_col: RequirementText
+  true_col: True Label
+  batch_size: 10
+  system_prompt_file: prompts/functional_system_prompt.txt
+  output_mode: label
+  parse_regex: ^\s*(\d+)\s*\.\s*Label\s*:\s*(.+?)\s*$
+- name: Quality
+  source_url: https://docs.google.com/spreadsheets/d/1x1Ua1FWfioQYkDXZepSTkRO02sD82540/edit?usp=drive_link&ouid=112068552438632279841&rtpof=true&sd=true
+  local_path: data/raw/Quality.xlsx
+  text_col: RequirementText
+  true_col: True Label
+  batch_size: 10
+  system_prompt_file: prompts/quality_system_prompt.txt
+  output_mode: label
+  parse_regex: ^\s*(\d+)\s*\.\s*Label\s*:\s*(.+?)\s*$
+- name: Security
+  source_url: https://docs.google.com/spreadsheets/d/1_fT878ebTuuGj1f09TYEqB8Fe0XLLCgH/edit?usp=drive_link&ouid=112068552438632279841&rtpof=true&sd=true
+  local_path: data/raw/Security.xlsx
+  text_col: RequirementText
+  true_col: True Label
+  batch_size: 10
+  system_prompt_file: prompts/security_system_prompt.txt
+  output_mode: label
+  parse_regex: ^\s*(\d+)\s*\.\s*Label\s*:\s*(.+?)\s*$
+- name: NFR
+  source_url: https://docs.google.com/spreadsheets/d/1rP7sIc6VuylVpBsn09skdlOskoDlzotp/edit?usp=drive_link&ouid=112068552438632279841&rtpof=true&sd=true
+  local_path: data/raw/NFR_Multi.xlsx
+  text_col: RequirementText
+  true_col: True Label
+  batch_size: 5
+  system_prompt_file: prompts/nfr_multi_system_prompt.txt
+  output_mode: label
+  parse_regex: ^\s*(\d+)\s*\.\s*Label\s*:\s*(.+?)\s*$
+- name: NFR-top
+  source_url: https://docs.google.com/spreadsheets/d/1tHYVbhh3UJRS0asc9Ut5D7XEcZ80JZk6/edit?usp=drive_link&ouid=112068552438632279841&rtpof=true&sd=true
+  local_path: data/raw/NFR_Top.xlsx
+  text_col: RequirementText
+  true_col: True Label
+  batch_size: 5
+  system_prompt_file: prompts/nfr_top_system_prompt.txt
+  output_mode: label
+  parse_regex: ^\s*(\d+)\s*\.\s*Label\s*:\s*(.+?)\s*$
+- name: NFR-Hier
+  source_url: https://docs.google.com/spreadsheets/d/1d-9hBi9qbnHCmASuZ5s4_sL9fXzy_syy/edit?usp=drive_link&ouid=112068552438632279841&rtpof=true&sd=true
+  local_path: data/raw/NFR_Hier.xlsx
+  text_col: RequirementText
+  true_col: True Label
+  batch_size: 3
+  system_prompt_file: prompts/hier_system_prompt.txt
+  output_mode: hier
+  parse_regex: ^\s*(\d+)\.\s*Level 1 Label:\s*(Functional|Non-functional)\s*-->\s*Level
+    2 Label:\s*(.+?)\s*$
