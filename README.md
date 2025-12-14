@@ -26,7 +26,7 @@ This repository implements our **primary contribution**:
 - Fully deterministic scoring pipeline
 - Closely aligned with the experimental design reported in the paper
 
-📌 **This is the main artifact for reproducing the core results of the paper.**
+**This is the main artifact for reproducing the core results of the paper.**
 
 ---
 
@@ -91,4 +91,5 @@ If you use any of these artifacts, please cite our paper:
 > Waad Alhoshan, Alessio Ferrari, Liping Zhao
 
 ---
+
 
