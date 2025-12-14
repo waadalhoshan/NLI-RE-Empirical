@@ -1,0 +1,35 @@
+task,label,curated_text,parent_label,level
+Binary_Functional,Functional,"functional, system, behavior, shall, or must",,
+Binary_Functional,Non-Functional,"not about functional, system, behavior, shall, or must",,
+Binary_Quality,Quality,,,
+Binary_Quality,Non-Quality,,,
+Binary_Security,Security,"security, authorization, or protection",,
+Binary_Security,Non-Security,not security,,
+Multiclass_NFR,Performance,periodic execution or efficacy performance,,
+Multiclass_NFR,Security,"security, authorization, or protection",,
+Multiclass_NFR,Operational,"working, running, connecting, interfacing, or operative environment",,
+Multiclass_NFR,Scalability,"scalable, increasable or developable",,
+Multiclass_NFR,Usability,"instructive, easy, helpful, useful, learnable, explainable, affordable, intuitive, or understandable",,
+Multiclass_NFR,Maintainability,"maintaining, fixing, running or updating",,
+Multiclass_NFR,Look and Feel,"appearance, interface, look feel",,
+Multiclass_NFR,Availability,avaliable or timely achievable,,
+Multiclass_NFR,Portability,"portability, compatibility, adaptability, flexibility",,
+Multiclass_NFR,Legal,"legal, law, or rules",,
+Multiclass_NFR,Fault Tolerance,system recovery fault tolerance,,
+Multiclass_NFR_Top,Security,"security, authorization, or protection",,
+Multiclass_NFR_Top,Performance,periodic execution or efficacy performance,,
+Multiclass_NFR_Top,Operational,"working, running, connecting, interfacing, or operative environment",,
+Multiclass_NFR_Top,Usability,"instructive, easy, helpful, useful, learnable, explainable, affordable, intuitive, or understandable",,
+Hier_NFR,Functional,"functional, system, behavior, shall, or must",,0
+Hier_NFR,Non-Functional,"not about functional, system, behavior, shall, or must",,0
+Hier_NFR,Performance,periodic execution or efficacy performance,Non-Functional,1
+Hier_NFR,Security,"security, authorization, or protection",Non-Functional,1
+Hier_NFR,Operational,"working, running, connecting, interfacing, or operative environment",Non-Functional,1
+Hier_NFR,Scalability,"scalable, increasable or developable",Non-Functional,1
+Hier_NFR,Usability,"instructive, easy, helpful, useful, learnable, explainable, affordable, intuitive, or understandable",Non-Functional,1
+Hier_NFR,Maintainability,"maintaining, fixing, running or updating",Non-Functional,1
+Hier_NFR,Look and Feel,"appearance, interface, look feel",Non-Functional,1
+Hier_NFR,Availability,avaliable or timely achievable,Non-Functional,1
+Hier_NFR,Portability,"portability, compatibility, adaptability, flexibility",Non-Functional,1
+Hier_NFR,Legal,"legal, law, or rules",Non-Functional,1
+Hier_NFR,Fault Tolerance,system recovery fault tolerance,Non-Functional,1

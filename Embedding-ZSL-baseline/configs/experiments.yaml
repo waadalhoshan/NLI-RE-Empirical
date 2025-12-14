@@ -1,0 +1,30 @@
+seed: 42
+embedding_model:
+  name: "all-MiniLM-L12-v2"
+  hf_id: "sentence-transformers/all-MiniLM-L12-v2"
+
+tasks:
+  - name: "Binary_Functional"
+    type: "binary"
+    labels: ["Functional", "Non-Functional"]
+
+  - name: "Binary_Quality"
+    type: "binary"
+    labels: ["Quality", "Non-Quality"]
+
+  - name: "Binary_Security"
+    type: "binary"
+    labels: ["Security", "Non-Security"]
+
+  - name: "Multiclass_NFR"
+    type: "multiclass"
+    labels: ["Performance","Security","Operational","Scalability","Usability","Maintainability","Look and Feel","Availability","Portability","Legal","Fault Tolerance"]
+
+  - name: "Multiclass_NFR_Top"
+    type: "multiclass"
+    labels: ["Security","Performance","Operational","Usability"]
+
+  - name: "Hier_NFR"
+    type: "hierarchical"
+    root_labels: ["Functional", "Non-Functional"]
+    use_dataset_hierarchy: true
