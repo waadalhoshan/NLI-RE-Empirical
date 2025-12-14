@@ -75,10 +75,6 @@ This repository supports the analysis of **generation-based prompting**, enablin
 | Embedding-based | Sentence embeddings | Zero-shot baseline |
 | ChatGPT | Prompted generation | Generative baseline |
 
-Each repository is **self-contained**, but all follow:
-- Consistent dataset usage
-- Comparable evaluation metrics
-- Transparent and reproducible workflows
 
 ---
 
@@ -91,5 +87,6 @@ If you use any of these artifacts, please cite our paper:
 > Waad Alhoshan, Alessio Ferrari, Liping Zhao
 
 ---
+
 
 
