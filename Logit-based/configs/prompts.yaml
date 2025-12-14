@@ -1,0 +1,8 @@
+# Prompt templates aligned with the author's logit-based notebook (see notebooks/logit.txt)
+patterns:
+  assertion_is_about: "This requirement: '{req}' is about '{label}' requirement."
+  assertion_belongs_to: "This requirement: '{req}' belongs to '{label}' category."
+  qa_is_about: "Is this requirement: '{req}' about {label} requirement?"
+  qa_belongs_to: "Does this requirement: '{req}' belong to {label} category?"
+  definition_is_about: "{definition}. Hence this requirement: '{req}' is about {label} requirement."
+  definition_belongs_to: "{definition}. Hence this requirement: '{req}' belongs to {label} category."

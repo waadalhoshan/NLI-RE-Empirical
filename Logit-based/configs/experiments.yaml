@@ -1,0 +1,41 @@
+seed: 42
+
+models:
+  logit_models:
+    - name: "Meta-Llama-3-8B"
+      hf_id: "meta-llama/Meta-Llama-3-8B"
+      task_head: "sequence_classification"
+      requires_auth: true
+
+tasks:
+  - name: "Binary_Functional"
+    type: "binary"
+    labels: ["Functional", "Non-Functional"]
+  - name: "Binary_Quality"
+    type: "binary"
+    labels: ["Quality", "Non-Quality"]
+  - name: "Binary_Security"
+    type: "binary"
+    labels: ["Security", "Non-Security"]
+
+  - name: "Multiclass_NFR"
+    type: "multiclass"
+    labels: ["Performance","Security","Operational","Scalability","Usability","Maintainability","Look and Feel","Availability","Portability","Legal","Fault Tolerance"]
+  - name: "Multiclass_NFR_Top"
+    type: "multiclass"
+    labels: ["Security","Performance","Operational","Usability"]
+
+  - name: "Hier_NFR"
+    type: "hierarchical"
+    root_labels: ["Functional", "Non-Functional"]
+    use_dataset_hierarchy: true
+
+prompt_patterns:
+  - assertion_is_about
+  - assertion_belongs_to
+  - qa_is_about
+  - qa_belongs_to
+  - definition_is_about
+  - definition_belongs_to
+
+output_dir: "results/runs"

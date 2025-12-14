@@ -1,0 +1,56 @@
+datasets:
+  functional:
+    description: "Functional vs Non-functional"
+    local_path: "data/raw/functional.xlsx"
+    url: ""
+    format: "excel"
+    text_col: "RequirementText"
+    label_col: "True Label"
+    task: "Binary_Functional"
+
+  quality:
+    description: "Quality vs Non-quality"
+    local_path: "data/raw/quality.xlsx"
+    url: ""
+    format: "excel"
+    text_col: "RequirementText"
+    label_col: "True Label"
+    task: "Binary_Quality"
+
+  security:
+    description: "Security vs Non-security"
+    local_path: "data/raw/security.xlsx"
+    url: ""
+    format: "excel"
+    text_col: "RequirementText"
+    label_col: "True Label"
+    task: "Binary_Security"
+
+  nfr_multi:
+    description: "NFR multi-class"
+    local_path: "data/raw/nfr_multi.xlsx"
+    url: ""
+    format: "excel"
+    text_col: "RequirementText"
+    label_col: "True Label"
+    task: "Multiclass_NFR"
+
+  nfr_top:
+    description: "NFR top-4"
+    local_path: "data/raw/nfr_top.xlsx"
+    url: ""
+    format: "excel"
+    text_col: "RequirementText"
+    label_col: "True Label"
+    task: "Multiclass_NFR_Top"
+
+  hierarchical_promise_xlsx:
+    description: "Hierarchical PROMISE dataset"
+    local_path: "data/raw/fixed_promise_dataset.xlsx"
+    url: "https://github.com/waadalhoshan/LLM4RC/raw/main/Datasets/Hierarchical/fixed_promise_dataset.xlsx"
+    format: "excel"
+    text_col: "RequirementText"
+    fr_label_col: "FR Label"
+    nfr_label_col: "NFR Label"
+    fr_def_col: "FR/NFR Definition"
+    nfr_def_col: "NFR Label Definition"
